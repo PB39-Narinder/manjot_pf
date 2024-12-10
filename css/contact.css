@@ -1,0 +1,237 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.Navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .nav-left h2 {
+    margin: 0;
+}
+
+.Navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.Navbar .nav-links a:hover {
+    color: #f0a500;
+}
+
+/* Contact Header Section */
+.contact-header {
+    background-color: #f0a500;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contact-form .form-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    border-color: #f0a500;
+    outline: none;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form .submit-btn {
+    background-color: #f0a500;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #e09e00;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-media .social-icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    color: #f0a500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Navbar .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Navbar .nav-links a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Contact Header */
+    .contact-header {
+        padding: 30px 15px;
+    }
+
+    .contact-header h1 {
+        font-size: 28px;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 20px 10px;
+    }
+
+    .contact-form .form-container {
+        padding: 20px;
+    }
+
+    .contact-form .form-group label {
+        font-size: 14px;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form .submit-btn {
+        font-size: 16px;
+    }
+
+    /* Social Media */
+    .social-media .social-icon {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 24px;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+    }
+
+    .contact-form .submit-btn {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
